@@ -1,0 +1,25 @@
+package practice;
+import java.util.Scanner;
+
+public class RSPDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner n = new Scanner(System.in);
+		System.out.println("철수의 손: (s: 가위, r: 바위, p: 보)");
+        String i = n.next();
+        System.out.println("영희의 손: (s: 가위, r: 바위, p: 보)");
+        String t = n.next();
+
+        // 가위바위보 승부 판정
+        if (i.equals(t)) {
+            System.out.println("무승부");
+        } else if ((i.equals("s") && t.equals("p")) ||
+                   (i.equals("r") && t.equals("s")) ||
+                   (i.equals("p") && t.equals("r"))) {
+            System.out.println("철수 승!");
+        } else {
+            System.out.println("영희 승!");
+        }
+    }
+}
