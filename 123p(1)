@@ -1,0 +1,16 @@
+package practice;
+
+public class PitagorasDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for (int a = 1; a <= 20; a++) {
+            for (int b = 1; b <= 20 - a; b++) {
+                int c = (int) Math.sqrt(a * a + b * b);
+                if (c * c == a * a + b * b && a + b + c <= 20) {
+                    System.out.println("a: " + a + ", b: " + b + ", c: " + c);
+                }
+            }
+        }
+    }
+}
