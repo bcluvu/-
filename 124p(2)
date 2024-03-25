@@ -1,0 +1,18 @@
+package practice;
+
+public class FooHelloDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		foo("안녕",1);
+		foo("안녕하세요",1,2);
+		foo("잘 있어");
+	}
+	public static void foo(String str, int... nums) {
+		System.out.print(str + ": ");
+		for (int num : nums) {
+			System.out.print(num + " ");
+		}
+		System.out.println();
+	}
+}
