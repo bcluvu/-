@@ -1,0 +1,12 @@
+package practice;
+class Circle{
+	private double radius;
+	public Circle(double r) {
+		radius = r;
+	}
+}
+public class CircleDemo6 {
+	public static void main(String[] args) {
+		Circle myCircle = new Circle(10.0);
+	}
+}
