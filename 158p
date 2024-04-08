@@ -1,0 +1,24 @@
+package practice;
+class Printer {
+	int numOfPapers = 0;
+	
+	public void print(int amount) {
+		if (amount <= numOfPapers) {
+			System.out.println(amount + "장을 출력합니다");
+			numOfPapers -= amount;
+		} else {
+			System.out.println("용지가 부족합니다.");
+		}
+	}
+}
+public class PrinterTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	Printer printer = new Printer();
+	printer.numOfPapers = 100;
+	printer.print(70);
+	System.out.println("남은 용지 수 : " + printer.numOfPapers);
+	}
+
+}
